@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <style>
+        .delete-btn{
+            background-color: rgb(140, 38, 38);
+            padding:0.4rem 5rem;
+            border-radius: 10px;
+            
+        }
+        /* .content div{
+            word-wrap: break-word;
+        } */
+    </style>
+</head>
+<body class="h-screen bg-slate-700 flex justify-center items-center ">
+
+    <div>
+        <div class="bg-slate-500  flex flex-col  pl-8 pr-8 h-80  ">
+            <label class="text-xl font-bold " for="todo">Todo List Pracctice 1</label>
+            
+            <div class="grid grid-cols-3 mt-4 gap-2">
+            <input id="input1" placeholder="Todo List" class=" bg-purple-500 rounded-lg " type="text" >
+            <input type="date" name="date"  class="bg-purple-500 rounded-lg " id="mydate">
+            <button onclick="addme()" id="btn" class="   bg-transparent border-solid border-4 border-purple-700 rounded-md">Add</button>
+        </div>
+        <div class="h-[2px] w-[30rem] mt-4 mx-auto bg-purple-700"></div>
+
+        <div id="content" class="break-words grid grid-cols-3 mt-4 gap-2 font-medium text-xl text-white" ></div>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
