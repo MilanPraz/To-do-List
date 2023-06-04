@@ -22,19 +22,25 @@ function renderme(){
     // const name=myArray.name;
     // const date=myArray.date;
 
-   
-    console.log(myobject)
-    
-    for(let i=0;i<myobject.length;i++){
 
-        let todoobject=myobject[i];
+    
+    
+
+    //using ForEach loop
+    myobject.forEach((element,index) => {
+        
+        let todoobject=element;
         const {name,date}=todoobject;
 
 
         let phtml=`<div>${name}</div> <div>${date}</div>
-        <div><button class="delete-btn" onclick="deleteme(${i})" >Delete</button></div>
+        <div><button class="delete-btn" onclick="deleteme(${index})" >Delete</button></div>
         `
         html+=phtml;
+    });
+    // for(let i=0;i<myobject.length;i++){
+
+       
       
   
 
@@ -50,8 +56,10 @@ function renderme(){
     
 
 
-    }
-    console.log(html)
+    // }
+   
+
+    // re write the div content again with new content agadi j thiyo sab remove hunxa
     content.innerHTML=html;
    
 
